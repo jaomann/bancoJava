@@ -1,18 +1,18 @@
-## Getting Started
+# Banco Criado em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Tecnologias utilizadas:
+    Scanner
+    Random
+Feito por João Emanuel - Bootcamp Java da DIO;
 
-## Folder Structure
+Classe User - 
+    Tem os atributos do Cliente, junto das propriedades Agência e Número que são geradas, automaticamente a cada execução, usando da classe Random.
+Classe ContaTerminal-
+    É aonde é executado o código via terminal, utilizando da classe Scanner para buscar os valores introduzidos por input e atribui-los ao objeto instanciado User.
 
-The workspace contains two folders by default, where:
+## Metodos
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+setAgencia: Gera um int aleatorio de no máximo 3 digitos, sendo de 000 a 999 e outro int de apenas 1 digito, sendo de 0 a 9; 
+            Cria a String agencia, onde esses valores são concatenados para forma no modelo "123-4" e por fim atribuidos a propriedade "Agencia", retornando esse valor.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+setNumero: Gera um int aleatorio de no máximo 5 digitos, sendo de 00000 a 99999, atribuindo a propriedade "Numero", retornando esse valor.
